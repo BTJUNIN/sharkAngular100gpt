@@ -1,0 +1,97 @@
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shark Fera - Lista de Clientes</title>
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="barra-lateral">
+    <div class="logo">
+      <span>SHARK</span>
+      <small>FERA</small>
+    </div>
+    <div class="caixa-pesquisa">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+    <ul class="menu">
+      <li><i class="fas fa-th"></i> Dashboard</li>
+      <li><i class="fas fa-user"></i> Clientes</li>
+      <li><i class="fas fa-calendar-alt"></i> Aluguéis Obras</li>
+      <li><i class="fas fa-calendar-alt"></i> Aluguéis Máquina</li>
+      <li><i class="fas fa-plus-square"></i> Criar Aluguel de Máquina</li>
+      <li><i class="fas fa-file-signature"></i> Criar Contrato de Obras</li>
+      <li><i class="fas fa-tools"></i> Máquinas disponíveis</li>
+      <li><i class="fas fa-cogs"></i> Maquinários Disponíveis</li>
+    </ul>
+  </div>
+
+  <div class="conteudo">
+    <h1>Lista de Clientes</h1>
+
+    <div class="tabela-container">
+      <table class="tabela-operarios">
+        <thead>
+          <tr>
+            <th>ID Obra</th>
+            <th>Cliente</th>
+            <th>CPF</th>
+            <th>Endereco</th>
+            
+            <th>CEP</th>
+            <th>Tipo Obra</th>
+            <th>Inicio </th>
+            <th>fim</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>joao gabriel</td>
+            <td>222.123.456-12</td>
+            <td>090232-110</td>
+            <td class=>(11)98712-1234</td>
+            <td>Escação</td>
+            <td>22/07/2025</td>
+            <td>22/07/2026</td>
+           
+           
+            <td>
+              <button class="botao-editar">Editar</button>
+              <button class="botao-deletar">Deletar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>luis gustavo</td>
+            <td>222.123.456-12</td>
+            <td>051232-210</td>
+           
+            <td>(21)9652-1234</td>
+            <td>demoliçaõ</td>
+            <td>21/04/2025</td>
+            <td>02/06/2028</td>
+            
+            <td>
+              <button class="botao-editar">Editar</button>
+              <button class="botao-deletar">Deletar</button>
+            </td>
+          </tr>
+   
+        </tbody>
+      </table>
+
+      <div class="paginacao">
+        <button>&laquo;</button>
+        <button>1</button>
+        <button class="ativo">2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>&raquo;</button>
+      </div>
+    </div>
+  </div>
+</body>

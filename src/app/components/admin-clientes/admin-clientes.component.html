@@ -1,0 +1,82 @@
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <div class="barra-lateral">
+    <div class="logo">
+      <span>SHARK</span>
+      <small>FERA</small>
+    </div>
+    <div class="caixa-pesquisa">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+    <ul class="menu">
+      <li><i class="fas fa-th"></i> Dashboard</li>
+      <li><i class="fas fa-user"></i> Clientes</li>
+      <li><i class="fas fa-calendar-alt"></i> Aluguéis Obras</li>
+      <li><i class="fas fa-calendar-alt"></i> Aluguéis Máquina</li>
+      <li><i class="fas fa-plus-square"></i> Criar Aluguel de Máquina</li>
+      <li><a routerLink="/Dashboard"></a><i class="fas fa-file-signature"></i> Criar Contrato de Obras</li>
+      <li><i class="fas fa-tools"></i> Máquinas disponíveis</li>
+      <li><i class="fas fa-cogs"></i> Maquinários Disponíveis</li>
+    </ul>
+  </div>
+
+  <div class="conteudo">
+    <h1>Lista de Clientes</h1>
+
+    <div class="tabela-container">
+      <table class="tabela-operarios">
+        <thead>
+          <tr>
+            <th>ID cliente</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>CPF</th>
+            
+            <th>numero</th>
+            <th>Endereco Obra</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>joao gabriel</td>
+            <td>Curabitur donec duis</td>
+            <td>123-123-12312</td>
+            <td class=>(11)98712-1234</td>
+            <td>estr campo limpo,143</td>
+           
+            <td>
+              <button class="botao-editar">Editar</button>
+              <button class="botao-deletar">Deletar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>luis gustavo</td>
+            <td>sdad</td>
+            <td>123-123-12313</td>
+           
+            <td>(21)9652-1234</td>
+            <td>rua gaspar,122</td>
+            <td>
+              <button class="botao-editar">Editar</button>
+              <button class="botao-deletar">Deletar</button>
+            </td>
+          </tr>
+   
+        </tbody>
+      </table>
+
+      <div class="paginacao">
+        <button>&laquo;</button>
+        <button>1</button>
+        <button class="ativo">2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>&raquo;</button>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,222 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+  }
+  
+  /* SIDEBAR */
+  .barra-lateral {
+    width: 250px;
+    min-width: 200px;
+    background-color: #fff;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+  
+  .logo {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .logo span {
+    display: block;
+    font-size: 24px;
+  }
+  
+  .logo small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #555;
+  }
+  
+  .caixa-pesquisa {
+    margin: 20px 0;
+  }
+  
+  .caixa-pesquisa input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .menu li i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .menu li:hover {
+    color: #ff9800;
+  }
+  
+  /* CONTEÚDO */
+  .conteudo {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-x: auto;
+  }
+  
+  h1 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  /* TABELA */
+  .tabela-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .tabela-operarios {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+  }
+  
+  .tabela-operarios th,
+  .tabela-operarios td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .tabela-operarios th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .status.alocado {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.descolado {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .botao-editar,
+  .botao-deletar {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .botao-editar {
+    background-color: #007bff;
+    margin-right: 5px;
+  }
+  
+  .botao-deletar {
+    background-color: #f44336;
+  }
+  
+  .botao-editar:hover {
+    background-color: #0056b3;
+  }
+  
+  .botao-deletar:hover {
+    background-color: #d32f2f;
+  }
+  
+  .paginacao {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .paginacao button {
+    margin: 0 3px;
+    padding: 5px 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .paginacao .ativo {
+    background: orange;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 1024px) {
+    .conteudo {
+      align-items: stretch;
+      padding: 20px;
+    }
+  
+    .tabela-container {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .barra-lateral {
+      width: 100%;
+      height: auto;
+      box-shadow: none;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .conteudo {
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .tabela-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .tabela-operarios {
+      min-width: 600px;
+    }
+  }
+  

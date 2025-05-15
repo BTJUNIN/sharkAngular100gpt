@@ -1,3 +1,38 @@
 import { Routes } from '@angular/router';
+import { LoginComponent } from './components/login/login.component';
+import { LandingpComponent } from './landingp/landingp.component';
+import { AdminPainelComponent } from './components/admin-painel/admin-painel.component';
+import { AdminClientesComponent } from './components/admin-clientes/admin-clientes.component';
+import { AdminCadastroclientesComponent } from './components/admin-cadastroclientes/admin-cadastroclientes.component';
+import { AdminCadoperariosComponent } from './components/admin-cadoperarios/admin-cadoperarios.component';
+import { AdminOperariosComponent } from './components/admin-operarios/admin-operarios.component';
+import { AdminCriarcontratosComponent } from './components/admin-criarcontratos/admin-criarcontratos.component';
+import { AdminMaquinasComponent } from './components/admin-maquinas/admin-maquinas.component';
+import { AdminObrasComponent } from './components/admin-obras/admin-obras.component';
+import { AdminCadmaquinasComponent } from './components/admin-cadmaquinas/admin-cadmaquinas.component';
 
-export const routes: Routes = [];
+
+
+export const routes: Routes = [
+    {path:'', component: LandingpComponent},
+    {path:'login', component: LoginComponent},
+    
+    {path: 'admin', component: AdminPainelComponent},
+    
+    {path: 'admin-clientes', component: AdminClientesComponent},
+    {path:"admin-cadclientes",component:AdminCadastroclientesComponent},
+    
+    {path:"operarios",component:AdminOperariosComponent},
+    {path:"admin-cadoperarios",component:AdminCadoperariosComponent},
+    
+    {path:"obras",component:AdminObrasComponent},
+    {path:"admin-criarcontratos", component:AdminCriarcontratosComponent},
+    
+   
+    {path:"maquinas", component:AdminMaquinasComponent},
+    {path: "admin-cadmaquinas", component:AdminCadmaquinasComponent},
+
+    
+
+
+];

@@ -1,0 +1,199 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+  }
+  
+  /* SIDEBAR */
+  .barra-lateral {
+    width: 250px;
+    background-color: #fff;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+  
+  .logo {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .logo span {
+    display: block;
+    font-size: 24px;
+  }
+  
+  .logo small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #555;
+  }
+  
+  .caixa-pesquisa {
+    margin: 20px 0;
+  }
+  
+  .caixa-pesquisa input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .menu {
+    list-style: none;
+  }
+  
+  .menu li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .menu li i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .menu li:hover {
+    color: #ff9800;
+  }
+  
+  /* CONTEÚDO */
+  .conteudo {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+  
+  .pagina-contrato {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cartao {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .grupo-formulario {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grupo-formulario label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .grupo-formulario input, .grupo-formulario select {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+  }
+  
+  .linha {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .linha .grupo-formulario {
+    flex: 1;
+  }
+  
+  .botao {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .botao button {
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .botao button:hover {
+    background: #e08e00;
+  }
+  
+  /* OBRAS CHECKLIST */
+  .obras-checklist {
+    width: 250px;
+    background: #1f1f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .obras-checklist h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .lista-obras label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .lista-obras input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .lista-obras input[type="checkbox"]:checked {
+    accent-color: orange;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 1024px) {
+    .pagina-contrato {
+      flex-direction: column;
+    }
+  
+    .cartao {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .obras-checklist {
+      width: 100%;
+    }
+  }
+  
