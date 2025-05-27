@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nome": "Marcio José",
+      "cpf": "12345678900",
+      "telefone": "11986818343",
+      "email": "marcio@gmail.com",
+      "cep": "12345678",
+      "endereco": "Rua da Esperança",
+      "numero": "123",
+      "bairro": "Centro",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Souza",
+      "cpf": "98765432100",
+      "telefone": "11999999999",
+      "email": "maria@gmail.com",
+      "cep": "87654321",
+      "endereco": "Avenida Principall",
+      "numero": "457",
+      "bairro": "Bairro Novo",
+      "estado": "Rio de Janeiro"
+    }
+  ]
+}
