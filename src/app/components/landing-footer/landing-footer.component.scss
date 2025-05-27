@@ -5,12 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+     
   }
   
   body {
     color: #1a1a1a;
     background: #ffffff;
     line-height: 1.6;
+    margin: 0px;
   }
   
   img {
@@ -51,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: rgba(0, 0, 0, 0.8);
+  
     position: fixed;
     width: 100%;
     z-index: 1000;

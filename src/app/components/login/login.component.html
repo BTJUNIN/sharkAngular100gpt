@@ -1,33 +1,64 @@
 <title>Logar</title>
 
-
-<body>
 <div class="login">
-    <img class="img-logo" src="./assets/login-img/logo.svg" alt="Logo Shark Fera cinza">
+  <img class="img-logo" src="./assets/login-img/logo.svg" alt="Logo Shark Fera cinza">
 
-    <h1 class="login-h1">Login</h1>
+  <h1 class="login-h1">Login</h1>
 
-    <div class="input-email">
-        <img src="./assets/login-img/icons8-arroba-24.png" alt="Arroba">
-        <input type="email" name="email" id="email" placeholder="Digite seu email">
-    </div>
+  
+  <div class="input-email">
+    <img src="./assets/login-img/icons8-arroba-24.png" alt="Arroba">
+    <input 
+      type="email" 
+      name="email" 
+      id="email" 
+      [(ngModel)]="email" 
+      placeholder="Digite seu email"
+      required
+    >
+  </div>
 
-    <div class="input-senha">
-        <img src="./assets/login-img/icons8-cadeado-24.png" alt="Cadeado">
-        <input type="password" name="password" id="password" placeholder="Digite sua senha">
-    </div>
+  <!-- Input de Senha -->
+  <div class="input-senha">
+    <img src="./assets/login-img/icons8-cadeado-24.png" alt="Cadeado">
+    <input 
+      type="password" 
+      name="senha" 
+      id="password" 
+      [(ngModel)]="senha" 
+      placeholder="Digite sua senha"
+      required
+    >
+  </div>
 
-    <p class="basico-texto">Esqueci minha senha</p>
+  
+  <p class="mensagem-login" *ngIf="mensagem">{{mensagem}}</p>
 
-    <a class="acessar-link" href="#">Acessar</a>
+  
+  <p class="basico-texto">Esqueci minha senha</p>
 
-    <p class="basico-texto" id="ou">ou</p>
+  
+  <button class="acessar-link" (click)="login()">
+    Acessar
+  </button>
 
-    <div class="google-link">
-        <img src="./assets/login-img/icons8-google-logo-30.png" alt="Google logo">
-        <p class="google-texto">Entrar com Google</p>
-    </div>
+  <p class="basico-texto" id="ou">ou</p>
 
-    <p class="cadastro-texto">Ainda nao possui uma conta? <u>Cadastre-se</u></p>
+  
+  <div class="google-link">
+    <img src="./assets/login-img/icons8-google-logo-30.png" alt="Google logo">
+    <p class="google-texto">Entrar com Google</p>
+  </div>
+
+
+    
+  ><div class="background">
+    <img src="coloca background">
+    
+  </div>
+
+ 
+  <p class="cadastro-texto">
+    Ainda não possui uma conta? <u>Cadastre-se</u>
+  </p>
 </div>
-</body>

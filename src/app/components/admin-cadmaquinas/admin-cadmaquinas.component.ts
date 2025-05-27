@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './admin-cadmaquinas.component.scss'
 })
 export class AdminCadmaquinasComponent {
+  
 
 }

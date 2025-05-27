@@ -1,11 +1,12 @@
 
 <head>
+  <h1>{{ modoEdicao ? 'Editar Cliente' : 'Cadastrar Cliente' }}</h1>
   <meta charset="UTF-8">
   <title>Shark Fera - Cadastro Cliente</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   </head>
 
-  
+
 <body>
   <div class="barra-lateral">
     <div class="logo">
@@ -28,63 +29,69 @@
   </div>
 
   <div class="conteudo">
-    <h1>Cadastrar Cliente</h1>
-    <p>Insira os dados do cliente</p>
+  <h1>{{ modoEdicao ? 'Editar Cliente' : 'Cadastrar Cliente' }}</h1>
 
-    <div class="cartao">
-      <h3>Informações do Operário</h3>
-      <p>Insira os dados do cliente</p>
-
+  <div class="cartao">
+    <form (ngSubmit)="salvar()">
       <div class="grupo-formulario">
-        <label>Nome</label>
-        <input type="text" value="Alexander">
-      </div>
-
-      <div class="grupo-formulario">
-        <label>CPF</label>
-        <input type="text" value="472.987.122-14">
-      </div>
-
-      <div class="grupo-formulario">
-        <label>Telefone</label>
-        <input type="text" value="(11)98721-1267">
-      </div>
-
-      <div class="grupo-formulario">
-        <label>Email</label>
-        <input type="email" value="alexander@gmail.com">
-      </div>
-
-      <div class="grupo-formulario">
-        <label>CEP</label>
-        <input type="text" value="05777-001">
-      </div>
-
-      <div class="grupo-formulario">
-        <label>Endereço</label>
-        <input type="text" value="Estrada do Campo">
+        <label>Nome:</label>
+        <input type="text" [(ngModel)]="cliente.nome" name="nome" required>
       </div>
 
       <div class="linha">
         <div class="grupo-formulario">
-          <label>Número</label>
-          <input type="text" value="123">
+          <label>CPF:</label>
+          <input type="text" [(ngModel)]="cliente.cpf" name="cpf" required>
         </div>
 
         <div class="grupo-formulario">
-          <label>Bairro</label>
-          <input type="text" value="Vila Prel">
+          <label>Telefone:</label>
+          <input type="text" [(ngModel)]="cliente.telefone" name="telefone" required>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="grupo-formulario">
+          <label>Email:</label>
+          <input type="email" [(ngModel)]="cliente.email" name="email" required>
         </div>
 
         <div class="grupo-formulario">
-          <label>Estado</label>
-          <input type="text" value="São Paulo">
+          <label>CEP:</label>
+          <input type="text" [(ngModel)]="cliente.cep" name="cep" required>
+        </div>
+      </div>
+
+      <div class="grupo-formulario">
+        <label>Endereço:</label>
+        <input type="text" [(ngModel)]="cliente.endereco" name="endereco" required>
+      </div>
+
+      <div class="linha">
+        <div class="grupo-formulario">
+          <label>Número:</label>
+          <input type="text" [(ngModel)]="cliente.numero" name="numero" required>
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Bairro:</label>
+          <input type="text" [(ngModel)]="cliente.bairro" name="bairro" required>
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Estado:</label>
+          <input type="text" [(ngModel)]="cliente.estado" name="estado" required>
         </div>
       </div>
 
       <div class="botao">
-        <button>EDITAR →</button>
+        <button type="submit">
+          {{ modoEdicao ? 'Atualizar Cliente' : 'Cadastrar Cliente' }}
+        </button>
       </div>
-    </div>
+    </form>
   </div>
+</div>
+
+
 </body>
